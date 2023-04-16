@@ -1,0 +1,109 @@
+2023-03-06 21:26:37 INFO  Mssql:31 - Источник запроса: SELECT PLANETS.NAMES,PLANEtS.RADIUS,PLANETS.TEMPERATURE, PLANETS.HAVE_LIFE,PLANETS.HAVE_ATMOSPHERE,SATELLITES.NAMES FROM dbo.PLANETS INNER JOIN dbo.SATELLITES 
+		ON PLANETS.NAMES = SATELLITES.PLANET;
+2023-03-06 21:26:38 INFO  Mssql:70 - Источник запроса: SELECT o.NAMES,[Минимальный радиус],isnull([Количество спутников],0) [Количество спутников] FROM (SELECT TOP 1 NAMES, RADIUS [Минимальный радиус] FROM PLANETS rt  order by RADIUS asc) o left outer join (SELECT SATELLITES.PLANET, count(*) [Количество спутников] from SATELLITES
+group by SATELLITES.PLANET) s
+		ON o.NAMES = s.PLANET;
+2023-03-06 21:26:38 INFO  Mssql:88 - Источник запроса: SELECT TOP 1 rt1.NAMES,[Сумма радиусов] from (SELECT PLANETS.NAMES, sum(SATELLITES.RADIUS)[Сумма радиусов] FROM PLANETS inner JOIN SATELLITES on PLANETS.NAMES = SATELLITES.PLANET GROUP BY PLANETS.NAMES) rt1 order by [Сумма радиусов] desc;
+2023-03-06 21:26:38 INFO  Mssql:100 - Количество записей результирующего набора данного запроса: 18
+2023-03-07 00:22:32 INFO  Mssql:31 - Источник запроса: SELECT PLANETS.NAMES,PLANEtS.RADIUS,PLANETS.TEMPERATURE, PLANETS.HAVE_LIFE,PLANETS.HAVE_ATMOSPHERE,SATELLITES.NAMES FROM dbo.PLANETS INNER JOIN dbo.SATELLITES 
+		ON PLANETS.NAMES = SATELLITES.PLANET;
+2023-03-07 00:22:34 INFO  Mssql:70 - Источник запроса: SELECT o.NAMES,[Минимальный радиус],isnull([Количество спутников],0) [Количество спутников] FROM (SELECT TOP 1 NAMES, RADIUS [Минимальный радиус] FROM PLANETS rt  order by RADIUS asc) o left outer join (SELECT SATELLITES.PLANET, count(*) [Количество спутников] from SATELLITES
+group by SATELLITES.PLANET) s
+		ON o.NAMES = s.PLANET;
+2023-03-07 00:22:34 INFO  Mssql:88 - Источник запроса: SELECT TOP 1 rt1.NAMES,[Сумма радиусов] from (SELECT PLANETS.NAMES, sum(SATELLITES.RADIUS)[Сумма радиусов] FROM PLANETS inner JOIN SATELLITES on PLANETS.NAMES = SATELLITES.PLANET GROUP BY PLANETS.NAMES) rt1 order by [Сумма радиусов] desc;
+2023-03-07 00:22:34 INFO  Mssql:100 - Количество записей результирующего набора данного запроса: 18
+2023-03-07 00:22:40 INFO  Mssql:31 - Источник запроса: SELECT PLANETS.NAMES,PLANEtS.RADIUS,PLANETS.TEMPERATURE, PLANETS.HAVE_LIFE,PLANETS.HAVE_ATMOSPHERE,SATELLITES.NAMES FROM dbo.PLANETS INNER JOIN dbo.SATELLITES 
+		ON PLANETS.NAMES = SATELLITES.PLANET;
+2023-03-07 00:22:41 INFO  Mssql:70 - Источник запроса: SELECT o.NAMES,[Минимальный радиус],isnull([Количество спутников],0) [Количество спутников] FROM (SELECT TOP 1 NAMES, RADIUS [Минимальный радиус] FROM PLANETS rt  order by RADIUS asc) o left outer join (SELECT SATELLITES.PLANET, count(*) [Количество спутников] from SATELLITES
+group by SATELLITES.PLANET) s
+		ON o.NAMES = s.PLANET;
+2023-03-07 00:22:41 INFO  Mssql:88 - Источник запроса: SELECT TOP 1 rt1.NAMES,[Сумма радиусов] from (SELECT PLANETS.NAMES, sum(SATELLITES.RADIUS)[Сумма радиусов] FROM PLANETS inner JOIN SATELLITES on PLANETS.NAMES = SATELLITES.PLANET GROUP BY PLANETS.NAMES) rt1 order by [Сумма радиусов] desc;
+2023-03-07 00:22:41 INFO  Mssql:100 - Количество записей результирующего набора данного запроса: 18
+2023-03-07 00:31:37 INFO  Mssql:31 - Источник запроса: SELECT PLANETS.NAMES,PLANEtS.RADIUS,PLANETS.TEMPERATURE, PLANETS.HAVE_LIFE,PLANETS.HAVE_ATMOSPHERE,SATELLITES.NAMES FROM dbo.PLANETS INNER JOIN dbo.SATELLITES 
+		ON PLANETS.NAMES = SATELLITES.PLANET;
+2023-03-07 00:31:42 INFO  Mssql:70 - Источник запроса: SELECT o.NAMES,[Минимальный радиус],isnull([Количество спутников],0) [Количество спутников] FROM (SELECT TOP 1 NAMES, RADIUS [Минимальный радиус] FROM PLANETS rt  order by RADIUS asc) o left outer join (SELECT SATELLITES.PLANET, count(*) [Количество спутников] from SATELLITES
+group by SATELLITES.PLANET) s
+		ON o.NAMES = s.PLANET;
+2023-03-07 00:31:42 INFO  Mssql:88 - Источник запроса: SELECT TOP 1 rt1.NAMES,[Сумма радиусов] from (SELECT PLANETS.NAMES, sum(SATELLITES.RADIUS)[Сумма радиусов] FROM PLANETS inner JOIN SATELLITES on PLANETS.NAMES = SATELLITES.PLANET GROUP BY PLANETS.NAMES) rt1 order by [Сумма радиусов] desc;
+2023-03-07 00:31:42 INFO  Mssql:100 - Количество записей результирующего набора данного запроса: 18
+2023-03-07 00:43:22 INFO  Mssql:31 - Источник запроса: SELECT PLANETS.NAMES,PLANEtS.RADIUS,PLANETS.TEMPERATURE, PLANETS.HAVE_LIFE,PLANETS.HAVE_ATMOSPHERE,SATELLITES.NAMES FROM dbo.PLANETS INNER JOIN dbo.SATELLITES 
+		ON PLANETS.NAMES = SATELLITES.PLANET;
+2023-03-07 00:43:24 INFO  Mssql:70 - Источник запроса: SELECT o.NAMES,[Минимальный радиус],isnull([Количество спутников],0) [Количество спутников] FROM (SELECT TOP 1 NAMES, RADIUS [Минимальный радиус] FROM PLANETS rt  order by RADIUS asc) o left outer join (SELECT SATELLITES.PLANET, count(*) [Количество спутников] from SATELLITES
+group by SATELLITES.PLANET) s
+		ON o.NAMES = s.PLANET;
+2023-03-07 00:43:24 INFO  Mssql:88 - Источник запроса: SELECT TOP 1 rt1.NAMES,[Сумма радиусов] from (SELECT PLANETS.NAMES, sum(SATELLITES.RADIUS)[Сумма радиусов] FROM PLANETS inner JOIN SATELLITES on PLANETS.NAMES = SATELLITES.PLANET GROUP BY PLANETS.NAMES) rt1 order by [Сумма радиусов] desc;
+2023-03-07 00:43:24 INFO  Mssql:100 - Количество записей результирующего набора данного запроса: 18
+2023-03-07 00:50:57 INFO  Mssql:31 - Источник запроса: SELECT PLANETS.NAMES,PLANEtS.RADIUS,PLANETS.TEMPERATURE, PLANETS.HAVE_LIFE,PLANETS.HAVE_ATMOSPHERE,SATELLITES.NAMES FROM dbo.PLANETS INNER JOIN dbo.SATELLITES 
+		ON PLANETS.NAMES = SATELLITES.PLANET;
+2023-03-07 00:50:59 INFO  Mssql:70 - Источник запроса: SELECT o.NAMES,[Минимальный радиус],isnull([Количество спутников],0) [Количество спутников] FROM (SELECT TOP 1 NAMES, RADIUS [Минимальный радиус] FROM PLANETS rt  order by RADIUS asc) o left outer join (SELECT SATELLITES.PLANET, count(*) [Количество спутников] from SATELLITES
+group by SATELLITES.PLANET) s
+		ON o.NAMES = s.PLANET;
+2023-03-07 00:50:59 INFO  Mssql:88 - Источник запроса: SELECT TOP 1 rt1.NAMES,[Сумма радиусов] from (SELECT PLANETS.NAMES, sum(SATELLITES.RADIUS)[Сумма радиусов] FROM PLANETS inner JOIN SATELLITES on PLANETS.NAMES = SATELLITES.PLANET GROUP BY PLANETS.NAMES) rt1 order by [Сумма радиусов] desc;
+2023-03-07 00:50:59 INFO  Mssql:100 - Количество записей результирующего набора данного запроса: 18
+2023-03-09 19:40:17 INFO  Mssql:31 - Источник запроса: SELECT PLANETS.NAMES,PLANEtS.RADIUS,PLANETS.TEMPERATURE, PLANETS.HAVE_LIFE,PLANETS.HAVE_ATMOSPHERE,SATELLITES.NAMES FROM dbo.PLANETS INNER JOIN dbo.SATELLITES 
+		ON PLANETS.NAMES = SATELLITES.PLANET;
+2023-03-10 15:15:29 INFO  Mssql:31 - Источник запроса: SELECT PLANETS.NAMES,PLANEtS.RADIUS,PLANETS.TEMPERATURE, PLANETS.HAVE_LIFE,PLANETS.HAVE_ATMOSPHERE,SATELLITES.NAMES FROM dbo.PLANETS INNER JOIN dbo.SATELLITES 
+		ON PLANETS.NAMES = SATELLITES.PLANET;
+2023-03-10 15:15:30 INFO  Mssql:70 - Источник запроса: SELECT o.NAMES,[Минимальный радиус],isnull([Количество спутников],0) [Количество спутников] FROM (SELECT TOP 1 NAMES, RADIUS [Минимальный радиус] FROM PLANETS rt  order by RADIUS asc) o left outer join (SELECT SATELLITES.PLANET, count(*) [Количество спутников] from SATELLITES
+group by SATELLITES.PLANET) s
+		ON o.NAMES = s.PLANET;
+2023-03-10 15:15:30 INFO  Mssql:88 - Источник запроса: SELECT TOP 1 rt1.NAMES,[Сумма радиусов] from (SELECT PLANETS.NAMES, sum(SATELLITES.RADIUS)[Сумма радиусов] FROM PLANETS inner JOIN SATELLITES on PLANETS.NAMES = SATELLITES.PLANET GROUP BY PLANETS.NAMES) rt1 order by [Сумма радиусов] desc;
+2023-03-10 15:15:30 INFO  Mssql:100 - Количество записей результирующего набора данного запроса: 18
+2023-03-10 15:21:04 INFO  Mssql:31 - Источник запроса: SELECT PLANETS.NAMES,PLANEtS.RADIUS,PLANETS.TEMPERATURE, PLANETS.HAVE_LIFE,PLANETS.HAVE_ATMOSPHERE,SATELLITES.NAMES FROM dbo.PLANETS INNER JOIN dbo.SATELLITES 
+		ON PLANETS.NAMES = SATELLITES.PLANET;
+2023-03-10 15:21:13 INFO  Mssql:70 - Источник запроса: SELECT o.NAMES,[Минимальный радиус],isnull([Количество спутников],0) [Количество спутников] FROM (SELECT TOP 1 NAMES, RADIUS [Минимальный радиус] FROM PLANETS rt  order by RADIUS asc) o left outer join (SELECT SATELLITES.PLANET, count(*) [Количество спутников] from SATELLITES
+group by SATELLITES.PLANET) s
+		ON o.NAMES = s.PLANET;
+2023-03-10 15:21:13 INFO  Mssql:88 - Источник запроса: SELECT TOP 1 rt1.NAMES,[Сумма радиусов] from (SELECT PLANETS.NAMES, sum(SATELLITES.RADIUS)[Сумма радиусов] FROM PLANETS inner JOIN SATELLITES on PLANETS.NAMES = SATELLITES.PLANET GROUP BY PLANETS.NAMES) rt1 order by [Сумма радиусов] desc;
+2023-03-10 15:21:13 INFO  Mssql:100 - Количество записей результирующего набора данного запроса: 18
+2023-03-13 16:46:34 INFO  Mssql:31 - Источник запроса: SELECT PLANETS.NAMES,PLANEtS.RADIUS,PLANETS.TEMPERATURE, PLANETS.HAVE_LIFE,PLANETS.HAVE_ATMOSPHERE,SATELLITES.NAMES FROM dbo.PLANETS INNER JOIN dbo.SATELLITES 
+		ON PLANETS.NAMES = SATELLITES.PLANET;
+2023-03-13 16:46:36 INFO  Mssql:70 - Источник запроса: SELECT o.NAMES,[Минимальный радиус],isnull([Количество спутников],0) [Количество спутников] FROM (SELECT TOP 1 NAMES, RADIUS [Минимальный радиус] FROM PLANETS rt  order by RADIUS asc) o left outer join (SELECT SATELLITES.PLANET, count(*) [Количество спутников] from SATELLITES
+group by SATELLITES.PLANET) s
+		ON o.NAMES = s.PLANET;
+2023-03-13 16:46:36 INFO  Mssql:88 - Источник запроса: SELECT TOP 1 rt1.NAMES,[Сумма радиусов] from (SELECT PLANETS.NAMES, sum(SATELLITES.RADIUS)[Сумма радиусов] FROM PLANETS inner JOIN SATELLITES on PLANETS.NAMES = SATELLITES.PLANET GROUP BY PLANETS.NAMES) rt1 order by [Сумма радиусов] desc;
+2023-03-13 16:46:36 INFO  Mssql:100 - Количество записей результирующего набора данного запроса: 18
+2023-03-16 16:31:29 INFO  Mssql:31 - Источник запроса: SELECT PLANETS.NAMES,PLANEtS.RADIUS,PLANETS.TEMPERATURE, PLANETS.HAVE_LIFE,PLANETS.HAVE_ATMOSPHERE,SATELLITES.NAMES FROM dbo.PLANETS INNER JOIN dbo.SATELLITES 
+		ON PLANETS.NAMES = SATELLITES.PLANET;
+2023-03-16 16:31:41 INFO  Mssql:31 - Источник запроса: SELECT PLANETS.NAMES,PLANEtS.RADIUS,PLANETS.TEMPERATURE, PLANETS.HAVE_LIFE,PLANETS.HAVE_ATMOSPHERE,SATELLITES.NAMES FROM dbo.PLANETS INNER JOIN dbo.SATELLITES 
+		ON PLANETS.NAMES = SATELLITES.PLANET;
+2023-03-16 16:31:43 INFO  Mssql:70 - Источник запроса: SELECT o.NAMES,[Минимальный радиус],isnull([Количество спутников],0) [Количество спутников] FROM (SELECT TOP 1 NAMES, RADIUS [Минимальный радиус] FROM PLANETS rt  order by RADIUS asc) o left outer join (SELECT SATELLITES.PLANET, count(*) [Количество спутников] from SATELLITES
+group by SATELLITES.PLANET) s
+		ON o.NAMES = s.PLANET;
+2023-03-16 16:31:43 INFO  Mssql:88 - Источник запроса: SELECT TOP 1 rt1.NAMES,[Сумма радиусов] from (SELECT PLANETS.NAMES, sum(SATELLITES.RADIUS)[Сумма радиусов] FROM PLANETS inner JOIN SATELLITES on PLANETS.NAMES = SATELLITES.PLANET GROUP BY PLANETS.NAMES) rt1 order by [Сумма радиусов] desc;
+2023-03-16 16:31:43 INFO  Mssql:100 - Количество записей результирующего набора данного запроса: 18
+2023-03-16 18:08:09 INFO  Mssql:31 - Источник запроса: SELECT PLANETS.NAMES,PLANEtS.RADIUS,PLANETS.TEMPERATURE, PLANETS.HAVE_LIFE,PLANETS.HAVE_ATMOSPHERE,SATELLITES.NAMES FROM dbo.PLANETS INNER JOIN dbo.SATELLITES 
+		ON PLANETS.NAMES = SATELLITES.PLANET;
+2023-03-16 18:08:11 INFO  Mssql:70 - Источник запроса: SELECT o.NAMES,[Минимальный радиус],isnull([Количество спутников],0) [Количество спутников] FROM (SELECT TOP 1 NAMES, RADIUS [Минимальный радиус] FROM PLANETS rt  order by RADIUS asc) o left outer join (SELECT SATELLITES.PLANET, count(*) [Количество спутников] from SATELLITES
+group by SATELLITES.PLANET) s
+		ON o.NAMES = s.PLANET;
+2023-03-16 18:08:11 INFO  Mssql:88 - Источник запроса: SELECT TOP 1 rt1.NAMES,[Сумма радиусов] from (SELECT PLANETS.NAMES, sum(SATELLITES.RADIUS)[Сумма радиусов] FROM PLANETS inner JOIN SATELLITES on PLANETS.NAMES = SATELLITES.PLANET GROUP BY PLANETS.NAMES) rt1 order by [Сумма радиусов] desc;
+2023-03-16 18:08:11 INFO  Mssql:100 - Количество записей результирующего набора данного запроса: 18
+2023-03-16 18:25:53 INFO  Mssql:31 - Источник запроса: SELECT PLANETS.NAMES,PLANEtS.RADIUS,PLANETS.TEMPERATURE, PLANETS.HAVE_LIFE,PLANETS.HAVE_ATMOSPHERE,SATELLITES.NAMES FROM dbo.PLANETS INNER JOIN dbo.SATELLITES 
+		ON PLANETS.NAMES = SATELLITES.PLANET;
+2023-03-16 18:26:16 INFO  Mssql:70 - Источник запроса: SELECT o.NAMES,[Минимальный радиус],isnull([Количество спутников],0) [Количество спутников] FROM (SELECT TOP 1 NAMES, RADIUS [Минимальный радиус] FROM PLANETS rt  order by RADIUS asc) o left outer join (SELECT SATELLITES.PLANET, count(*) [Количество спутников] from SATELLITES
+group by SATELLITES.PLANET) s
+		ON o.NAMES = s.PLANET;
+2023-03-16 18:26:16 INFO  Mssql:88 - Источник запроса: SELECT TOP 1 rt1.NAMES,[Сумма радиусов] from (SELECT PLANETS.NAMES, sum(SATELLITES.RADIUS)[Сумма радиусов] FROM PLANETS inner JOIN SATELLITES on PLANETS.NAMES = SATELLITES.PLANET GROUP BY PLANETS.NAMES) rt1 order by [Сумма радиусов] desc;
+2023-03-16 18:26:16 INFO  Mssql:100 - Количество записей результирующего набора данного запроса: 18
+2023-03-16 18:26:24 INFO  Mssql:31 - Источник запроса: SELECT PLANETS.NAMES,PLANEtS.RADIUS,PLANETS.TEMPERATURE, PLANETS.HAVE_LIFE,PLANETS.HAVE_ATMOSPHERE,SATELLITES.NAMES FROM dbo.PLANETS INNER JOIN dbo.SATELLITES 
+		ON PLANETS.NAMES = SATELLITES.PLANET;
+2023-03-16 18:26:25 INFO  Mssql:70 - Источник запроса: SELECT o.NAMES,[Минимальный радиус],isnull([Количество спутников],0) [Количество спутников] FROM (SELECT TOP 1 NAMES, RADIUS [Минимальный радиус] FROM PLANETS rt  order by RADIUS asc) o left outer join (SELECT SATELLITES.PLANET, count(*) [Количество спутников] from SATELLITES
+group by SATELLITES.PLANET) s
+		ON o.NAMES = s.PLANET;
+2023-03-16 18:26:25 INFO  Mssql:88 - Источник запроса: SELECT TOP 1 rt1.NAMES,[Сумма радиусов] from (SELECT PLANETS.NAMES, sum(SATELLITES.RADIUS)[Сумма радиусов] FROM PLANETS inner JOIN SATELLITES on PLANETS.NAMES = SATELLITES.PLANET GROUP BY PLANETS.NAMES) rt1 order by [Сумма радиусов] desc;
+2023-03-16 18:26:25 INFO  Mssql:100 - Количество записей результирующего набора данного запроса: 18
+2023-03-21 00:13:32 INFO  Mssql:31 - Источник запроса: SELECT PLANETS.NAMES,PLANEtS.RADIUS,PLANETS.TEMPERATURE, PLANETS.HAVE_LIFE,PLANETS.HAVE_ATMOSPHERE,SATELLITES.NAMES FROM dbo.PLANETS INNER JOIN dbo.SATELLITES 
+		ON PLANETS.NAMES = SATELLITES.PLANET;
+2023-03-21 00:13:37 INFO  Mssql:70 - Источник запроса: SELECT o.NAMES,[Минимальный радиус],isnull([Количество спутников],0) [Количество спутников] FROM (SELECT TOP 1 NAMES, RADIUS [Минимальный радиус] FROM PLANETS rt  order by RADIUS asc) o left outer join (SELECT SATELLITES.PLANET, count(*) [Количество спутников] from SATELLITES
+group by SATELLITES.PLANET) s
+		ON o.NAMES = s.PLANET;
+2023-03-21 00:13:37 INFO  Mssql:88 - Источник запроса: SELECT TOP 1 rt1.NAMES,[Сумма радиусов] from (SELECT PLANETS.NAMES, sum(SATELLITES.RADIUS)[Сумма радиусов] FROM PLANETS inner JOIN SATELLITES on PLANETS.NAMES = SATELLITES.PLANET GROUP BY PLANETS.NAMES) rt1 order by [Сумма радиусов] desc;
+2023-03-21 00:13:37 INFO  Mssql:100 - Количество записей результирующего набора данного запроса: 18
+2023-03-25 03:18:17 INFO  Mssql:31 - Источник запроса: SELECT PLANETS.NAMES,PLANEtS.RADIUS,PLANETS.TEMPERATURE, PLANETS.HAVE_LIFE,PLANETS.HAVE_ATMOSPHERE,SATELLITES.NAMES FROM dbo.PLANETS INNER JOIN dbo.SATELLITES 
+		ON PLANETS.NAMES = SATELLITES.PLANET;
+2023-03-25 03:18:20 INFO  Mssql:70 - Источник запроса: SELECT o.NAMES,[Минимальный радиус],isnull([Количество спутников],0) [Количество спутников] FROM (SELECT TOP 1 NAMES, RADIUS [Минимальный радиус] FROM PLANETS rt  order by RADIUS asc) o left outer join (SELECT SATELLITES.PLANET, count(*) [Количество спутников] from SATELLITES
+group by SATELLITES.PLANET) s
+		ON o.NAMES = s.PLANET;
+2023-03-25 03:18:20 INFO  Mssql:88 - Источник запроса: SELECT TOP 1 rt1.NAMES,[Сумма радиусов] from (SELECT PLANETS.NAMES, sum(SATELLITES.RADIUS)[Сумма радиусов] FROM PLANETS inner JOIN SATELLITES on PLANETS.NAMES = SATELLITES.PLANET GROUP BY PLANETS.NAMES) rt1 order by [Сумма радиусов] desc;
+2023-03-25 03:18:20 INFO  Mssql:100 - Количество записей результирующего набора данного запроса: 18
